@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mfp-node-server
+    env: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MFP_USERNAME
+        value: "nevergo0604205"
+      - key: MFP_PASSWORD
+        value: "310700Vlad310700"
